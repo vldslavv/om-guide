@@ -1,0 +1,85 @@
+site_name: Справочник по защите от принуждения к увольнению
+site_description: Практическое руководство по защите трудовых прав
+site_author: Справочник по трудовым правам
+site_url: https://om-dismissal-guide.github.io
+
+theme:
+  name: material
+  language: ru
+  palette:
+    scheme: default
+    primary: blue
+    accent: light-blue
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - navigation.tracking
+    - search.highlight
+    - search.share
+    - search.suggest
+    - content.code.copy
+    - content.action.edit
+    - toc.follow
+  icon:
+    repo: fontawesome/brands/github
+
+nav:
+  - 🏠 Главная: index.md
+  - 🧠 ЗНАНИЯ:
+    - 💡 Ключевые принципы: key-principles.md
+    - ⚖️ Правовые основы: legal-basis.md
+    - ❓ FAQ по ТК РФ: faq-tk-rf.md
+  - 🛡️ ЗАЩИТА:
+    - 🛡️ Оборонительная стратегия: defense-tactics.md
+  - 💼 ПРАКТИКА:
+    - 🏆 Практические кейсы: case-studies.md
+    - 📋 Шаблоны документов: document-templates.md
+  - 🤖 ИНСТРУМЕНТЫ:
+    - 🤖 Использование ИИ: ai-usage.md
+    - 📞 Полезные ресурсы: resources.md
+
+plugins:
+  - search:
+      lang: ru
+  - tags
+
+markdown_extensions:
+  - toc:
+      permalink: true
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - attr_list
+  - md_in_html
+  - footnotes
+
+extra:
+  analytics:
+    feedback:
+      title: Была ли эта страница полезной?
+      ratings:
+        - icon: material/emoticon-happy-outline
+          name: Эта страница была полезной
+          data: 1
+          note: >-
+            Спасибо за обратную связь!
+        - icon: material/emoticon-sad-outline
+          name: Эта страница может быть улучшена
+          data: 0
+          note: >-
+            Спасибо за обратную связь! Помогите нам улучшить эту страницу,
+            поделившись своими предложениями.
+
+copyright: |
+  &copy; 2025 Справочник по трудовым правам. Материалы предназначены для образовательных целей.
